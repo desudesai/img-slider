@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@700&family=Silkscreen:wght@700&family=Space+Mono&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+ .wrapper{
+   
+    width: 100%;
+    height: 100%;
+ }
+ .slide{
+    overflow: hidden;
+ }
+ .slide::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+
+ }
+
+ .slide .image{
+    
+    height:100%;
+    width:100%;
+    object-fit: cover;
+   
+ }
+
+ .slide .image-data{
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    z-index: 100;
+ }
+
+ .image-data{
+    color: rgba(255, 255, 255, 0.322);
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: url(./lain.gif);
+    -webkit-background-clip: text;
+    background-position: right 20px  bottom 460px;
+    text-align: center;
+
+ }
+
+ .image-data.saber{
+    color: rgba(255, 255, 255, 0.222);
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: url(./saber.gif);
+    -webkit-background-clip: text;
+    background-position: 50% 50%;
+    text-align: center;
+
+ }
+
+ .image-data h2{
+    text-shadow: -2px 2px 7px ;
+    font-size: 45px;
+    font-weight: 600;
+ }
+a.button{
+    display: inline-block;
+    padding:10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-image: url(./lain.gif);
+    background-position: 70% 65%;
+    margin-top: 25px;
+    transition:  all 0.3s ease;
+}
+
+a.button:hover{
+    color: black;
+    background-position:35% 62%;
+}
+
+a.saber{
+    display: inline-block;
+    padding:10px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-image: url(./saber.gif);
+    background-position: 50% 50%;
+    margin-top: 25px;
+    transition:  all 0.3s ease;
+}
+
+a.saber:hover{
+    color: black;
+    background-position: right 170px bottom 200px;
+}
+
+.image-data.mob{
+    color: rgba(255, 255, 255, 0.222);
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: url(./mob.gif);
+    -webkit-background-clip: text;
+    background-position: 50% 60%;
+    text-align: center;
+}
+a.mob{
+    display: inline-block;
+    padding:10px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-image: url(./mob.gif);
+    background-position: 30% 40%;
+    margin-top: 25px;
+    transition:  all 0.3s ease;
+}
+
+a.mob:hover{
+    color: rgb(255, 255, 255);
+    background-position: 50% 40%;
+}
+
+
+
+@media screen and(max-width:768px){
+    
+   }
+        
+    }
+}
